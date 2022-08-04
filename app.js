@@ -41,11 +41,11 @@ const courseRow = document.querySelector(".course_row");
 courseData = [...courses];
 
 nextItem = () => {
-    courseRow.scrollLeft -= 270;
+    courseRow.scrollLeft += 270;
 };
 
 prevItem = () => {
-    courseRow.scrollLeft += 270;
+    courseRow.scrollLeft -= 270;
 };
 
 function showItem(item) {
