@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillHub</title>
+    <!--===== Styles =====-->
+    <link rel="stylesheet" href="styles.css">
+    <!--===== Icon =====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</head>
+
+<body>
+
+    <!--===== Header =====-->
+    <header id="header">
+        <nav>
+            <a class="skilhub_logo nav_logo" href="./index.html">
+                <img src="./assets/img/logo.png" alt="SkillHub">
+            </a>
+
+            <ul id="menu" class="nav_menu">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Courses</a></li>
+                <li><a href="">Resources</a></li>
+                <li><a href="">Online Learning</a></li>
+            </ul>
+
+            <div>
+                <button onclick="window.location = './login.html'" class="nav_login">Login</button>
+                <i id="them_icon" class="fas fa-sun" onclick="toggleMode()"></i>
+                <i class="fas fa-bars" onclick="toggleNav()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login section">
+            <div class="section_header">
+                <h2>Login</h2>
+                <p>Non-disclosure agreement seed round seed <br> money accelerator influencer.</p>
+            </div>
+
+            <div class="login_wrapper">
+                <form class="login_form">
+                    <div class="form_group">
+                        <input type="email" placeholder="&#xf1fa; Your email address" title="Your email address" />
+                    </div>
+                    <div class="form_group">
+                        <input type="password" placeholder="&#xf084; Your password" title="Your password" />
+                    </div>
+                    <div class="form_group">
+                        <button type="button">Login</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <!--===== Footer =====-->
+    <footer>
+        <div class="footer_wrapper section">
+            <div class="footer_content">
+                <div>
+                    <a class="skilhub_logo" href="./index.html">
+                        <h2><i class="far fa-bookmark"></i> Skill<span>hub</span></h2>
+                    </a>
+                    <p class="about" style="margin: 15px 0;">Non-disclosure agreement seed round seed money <br>
+                        accelerator influencer. Growth hacking return
+                        nondis sure <br> agreement seed round seed.</p>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>About Product</p>
+                    <ul>
+                        <li><a href="#">Patch</a></li>
+                        <li><a href="#">Updates</a></li>
+                        <li><a href="#">Beta test</a></li>
+                        <li><a href="#">Pricing product</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Help and Solutions</p>
+                    <ul>
+                        <li><a href="#">Talk to support</a></li>
+                        <li><a href="#">Support docs</a></li>
+                        <li><a href="#">System status</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Support</p>
+                    <ul>
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Account information</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>&copy; SkillHub 2022</p>
+                <p>Terms and Condition · Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onload = () => {
+            const scriptTag = document.createElement("script");
+            scriptTag.src = "app.js";
+            document.body.appendChild(scriptTag);
+
+            if (localStorage.getItem("theme") == "light_theme" || localStorage.getItem("theme") == null) {
+                document.querySelector("#them_icon").classList.add("fa-sun");
+                document.querySelector("#them_icon").classList.remove("fa-moon");
+                document.querySelector(".nav_logo").innerHTML = '<img src="./assets/img/logo.png" alt="SkillHub">';
+            }
+            else {
+                document.querySelector("#them_icon").classList.remove("fa-sun");
+                document.querySelector("#them_icon").classList.add("fa-moon");
+                document.querySelector(".nav_logo").innerHTML = '<h2><i class="far fa-bookmark"></i> Skill<span>hub</span></h2>';
+            }
+
+        };
+    </script>
+    <script src="./data.js"></script>
+</body>
+
+</html>

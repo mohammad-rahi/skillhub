@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillHub</title>
+    <!--===== Styles =====-->
+    <link rel="stylesheet" href="styles.css">
+    <!--===== Icon =====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</head>
+
+<body>
+
+    <!--===== Header =====-->
+    <header id="header">
+        <nav>
+            <a class="skilhub_logo nav_logo" href="./index.html">
+                <img src="./assets/img/logo.png" alt="SkillHub">
+            </a>
+
+            <ul id="menu" class="nav_menu">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Courses</a></li>
+                <li><a href="">Resources</a></li>
+                <li><a href="">Online Learning</a></li>
+            </ul>
+
+            <div>
+                <button onclick="window.location = './login.html'" class="nav_login">Login</button>
+                <i id="them_icon" class="fas fa-sun" title="Change Theme" onclick="toggleMode()"></i>
+                <i class="fas fa-bars" onclick="toggleNav()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--===== Hero =====-->
+        <section class="section hero">
+            <div class="hero_wrapper row">
+                <div class="column column-1">
+                    <h3>Grow yourself with us</h3>
+                    <h1>Grow your skill & <br> get world class <br> job's</h1>
+                    <p>Non-disclosure agreement seed round seed money <br> accelerator influencer. Growth hacking return
+                        nondis sure <br> agreement seed round seed.</p>
+                    <form class="hero_form">
+                        <input type="text" placeholder="&#xf002; Search course title">
+                        <button type="button">Search</button>
+                    </form>
+                </div>
+                <div class="column column-2">
+                    <img src="./assets/img/1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--===== Explore =====-->
+        <section class="section explore">
+            <div class="explore_wrapper row">
+                <div class="column col">
+                    <img src="./assets/img/2.png" alt="">
+                </div>
+                <div class="column">
+                    <h2>Over 1M+ Students <br> gets job</h2>
+                    <p>Non-disclosure agreement seed round seed money <br> accelerator influencer. Growth hacking return
+                        nondis sure.</p>
+                    <p>Non-disclosure agreement seed round seed money <br> accelerator influencer.</p>
+                    <button>Explore More</button>
+                </div>
+            </div>
+        </section>
+
+        <!--===== How it works =====-->
+        <section class="section how">
+            <div class="how_wrapper">
+                <div class="section_header">
+                    <h2>How it works</h2>
+                    <p>Non-disclosure agreement seed round seed <br> money accelerator influencer.</p>
+                </div>
+                <div class="row">
+                    <div class="column column-1 boxes">
+                        <div class="box box-1">
+                            <img src="./assets/img/i (3).png" alt="">
+                            <div>
+                                <h3>Select a course</h3>
+                                <p>Non-disclosure agreement seed round seed <br> money accelerator influencer.</p>
+                            </div>
+                        </div>
+                        <div class="box box-2">
+                            <img src="./assets/img/i (2).png" alt="">
+                            <div>
+                                <h3>Fill it up & give payment</h3>
+                                <p>Non-disclosure agreement seed round seed <br> money accelerator influencer.</p>
+                            </div>
+                        </div>
+                        <div class="box box-3">
+                            <img src="./assets/img/i (1).png" alt="">
+                            <div>
+                                <h3>Start build yourself</h3>
+                                <p>Non-disclosure agreement seed round seed <br> money accelerator influencer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column column-2">
+                        <img src="./assets/img/3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== Courese =====-->
+        <section class="section courses">
+            <div>
+                <div class="section_header">
+                    <h2>Our popular courses</h2>
+                    <p>Non-disclosure agreement seed round seed <br> money accelerator influencer.</p>
+                </div>
+                <div class="course_wrapper">
+                    <button id="prev" onclick="prevItem()"><i class="fas fa-angle-left"></i></button>
+                    <div class="course_row">
+                        
+                    </div>
+                    <button id="next" onclick="nextItem()"><i class="fas fa-angle-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!--===== Do you have any query? =====-->
+        <section class="section search">
+            <div class="search_wrapper">
+                <div class="img_wrapper">
+                    <img src="./assets/img/4.png" alt="">
+                </div>
+                <div class="section_header">
+                    <h2>Do you have any query?</h2>
+                    <p>Non-disclosure agreement seed round seed</p>
+                    <form class="hero_form">
+                        <input type="text" placeholder="&#xf002; Search course title">
+                        <button type="button">Search</button>
+                    </form>
+                </div>
+                <div class="img_wrapper">
+                    <img src="./assets/img/5.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--===== Footer =====-->
+    <footer>
+        <div class="footer_wrapper section">
+            <div class="footer_content">
+                <div>
+                    <a class="skilhub_logo" href="./index.html">
+                        <h2><i class="far fa-bookmark"></i> Skill<span>hub</span></h2>
+                    </a>
+                    <p class="about" style="margin: 15px 0;">Non-disclosure agreement seed round seed money <br>
+                        accelerator influencer. Growth hacking return
+                        nondis sure <br> agreement seed round seed.</p>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>About Product</p>
+                    <ul>
+                        <li><a href="#">Patch</a></li>
+                        <li><a href="#">Updates</a></li>
+                        <li><a href="#">Beta test</a></li>
+                        <li><a href="#">Pricing product</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Help and Solutions</p>
+                    <ul>
+                        <li><a href="#">Talk to support</a></li>
+                        <li><a href="#">Support docs</a></li>
+                        <li><a href="#">System status</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Support</p>
+                    <ul>
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Account information</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>&copy; SkillHub 2022</p>
+                <p>Terms and Condition · Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onload = () => {
+            const scriptTag = document.createElement("script");
+            scriptTag.src = "app.js";
+            document.body.appendChild(scriptTag);
+
+            if (localStorage.getItem("theme") == "light_theme" || localStorage.getItem("theme") == null) {
+                document.querySelector("#them_icon").classList.add("fa-sun");
+                document.querySelector("#them_icon").classList.remove("fa-moon");
+                document.querySelector(".nav_logo").innerHTML = '<img src="./assets/img/logo.png" alt="SkillHub">';
+            }
+            else {
+                document.querySelector("#them_icon").classList.remove("fa-sun");
+                document.querySelector("#them_icon").classList.add("fa-moon");
+                document.querySelector(".nav_logo").innerHTML = '<h2><i class="far fa-bookmark"></i> Skill<span>hub</span></h2>';
+            }
+
+        };
+    </script>
+    <script src="./data.js"></script>
+</body>
+
+</html>
