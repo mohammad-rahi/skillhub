@@ -393,8 +393,8 @@ main {
 }
 
 .loading{
-    border: 8px solid var(--clr-font);
-    border-top-color: var(--clr-primary);
+    border: 8px solid var(--clr-primary);
+    border-top-color: transparent;
     border-radius: 50%;
     width: 80px;
     height: 80px;
