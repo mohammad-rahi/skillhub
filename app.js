@@ -1,6 +1,6 @@
 window.onscroll = () => {
     if ((document.body.scrollHeight > 100) || (document.documentElement.scrollHeight > 100)) {
-        document.getElementById("header").style.boxShadow = "0 1px 4px rgba(0,0,0,.2)";
+        document.getElementById("header").style.boxShadow = "0 1px 15px rgba(0,0,0,.1)";
     }
 };
 
@@ -30,6 +30,10 @@ function toggleMode() {
     }
 
     //console.log(localStorage.getItem("theme"));
+}
+
+function loginModal(){
+    document.querySelector(".login_overlay").classList.add("open");
 }
 
 document.documentElement.classList.add(localStorage.getItem("theme"));

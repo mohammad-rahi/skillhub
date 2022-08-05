@@ -29,7 +29,7 @@
             </ul>
 
             <div>
-                <button onclick="window.location = './login.html'" class="nav_login">Login</button>
+                <button onclick="loginModal()" class="nav_login">Login</button>
                 <i id="them_icon" class="fas fa-sun" title="Change Theme" onclick="toggleMode()"></i>
                 <i class="fas fa-bars" onclick="toggleNav()"></i>
             </div>
@@ -120,7 +120,7 @@
                 <div class="course_wrapper">
                     <button id="prev" onclick="prevItem()"><i class="fas fa-angle-left"></i></button>
                     <div class="course_row">
-                        
+
                     </div>
                     <button id="next" onclick="nextItem()"><i class="fas fa-angle-right"></i></button>
                 </div>
@@ -146,6 +146,25 @@
                 </div>
             </div>
         </section>
+
+        <!--===== Login =====-->
+        <div class="login_overlay">
+            <div class="login_wrapper">
+                <button class="close_btn" onclick="document.querySelector('.login_overlay').classList.remove('open')"><i class="fas fa-times"></i></button>
+                <form class="login_form">
+                    <div class="form_group">
+                        <input type="email" placeholder="&#xf1fa; Your email address" title="Your email address" />
+                    </div>
+                    <div class="form_group">
+                        <input type="password" placeholder="&#xf084; Your password" title="Your password" />
+                    </div>
+                    <div class="form_group">
+                        <button type="button">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
     </main>
 
     <!--===== Footer =====-->
