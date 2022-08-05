@@ -32,7 +32,7 @@ function toggleMode() {
     //console.log(localStorage.getItem("theme"));
 }
 
-function loginModal(){
+function loginModal() {
     document.querySelector(".login_overlay").classList.add("open");
 }
 
@@ -53,7 +53,7 @@ prevItem = () => {
 };
 
 function showItem(item) {
-
+    courseRow.innerHTML = "";
     courseData.map((course) => {
         const { img, title } = course;
 

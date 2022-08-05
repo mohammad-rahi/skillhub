@@ -22,10 +22,10 @@
             </a>
 
             <ul id="menu" class="nav_menu">
-                <li><a href="">About Us</a></li>
-                <li><a href="">Courses</a></li>
-                <li><a href="">Resources</a></li>
-                <li><a href="">Online Learning</a></li>
+                <li><a>About Us</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a>Resources</a></li>
+                <li><a>Online Learning</a></li>
             </ul>
 
             <div>
@@ -111,7 +111,7 @@
         </section>
 
         <!--===== Courese =====-->
-        <section class="section courses">
+        <section id="courses" class="section courses">
             <div>
                 <div class="section_header">
                     <h2>Our popular courses</h2>
@@ -120,7 +120,7 @@
                 <div class="course_wrapper">
                     <button id="prev" onclick="prevItem()"><i class="fas fa-angle-left"></i></button>
                     <div class="course_row">
-
+                        <div class="loading"></div>
                     </div>
                     <button id="next" onclick="nextItem()"><i class="fas fa-angle-right"></i></button>
                 </div>

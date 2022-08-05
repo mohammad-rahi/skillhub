@@ -120,6 +120,7 @@ header nav {
     transition: var(--transition);
     z-index: 0;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #them_icon,
@@ -391,11 +392,32 @@ main {
     align-items: center;
 }
 
+.loading{
+    border: 8px solid var(--clr-font);
+    border-top-color: var(--clr-primary);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    animation: loader 1s infinite linear;
+}
+
+@keyframes loader {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 .course_row {
     width: 100%;
+    height: 390px;
     padding: 15px 0;
     overflow-x: scroll;
     white-space: nowrap;
+    position: relative;
 }
 
 .course_row::-webkit-scrollbar {
