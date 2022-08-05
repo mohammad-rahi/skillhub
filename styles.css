@@ -7,6 +7,7 @@
     --clr-font: #212832;
     --clr-primary: #3fba96;
     --clr-ratting: #fed21c;
+    --clr-hover: #f1f1f1;
     --clr-shadow: rgba(0, 0, 0, .2);
     --shadow-light: 0 5px 15px rgba(0, 0, 0, .1);
     --shadow-dark: 0 5px 15px rgba(0, 0, 0, .4);
@@ -18,6 +19,7 @@
 .dark_theme {
     --clr-bcg: #212832;
     --clr-font: #fff;
+    --clr-hover: #313943;
     --clr-shadow: rgba(255, 255, 255, .2);
 }
 
@@ -392,7 +394,6 @@ main {
     padding: 15px 0;
     overflow-x: scroll;
     white-space: nowrap;
-    transition: var(--transition);
 }
 
 .course_row::-webkit-scrollbar {
@@ -421,11 +422,10 @@ main {
     width: 270px;
     display: inline-block;
     cursor: pointer;
-    transition: var(--transition);
 }
 
 .course_item:hover {
-    transform: scale(1.05);
+    background-color: var(--clr-hover);
 }
 
 .course_item img {
