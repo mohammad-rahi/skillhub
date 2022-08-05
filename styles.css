@@ -409,11 +409,11 @@ main {
     0%{
         transform: rotate(0deg);
     }
-    25%{
+    50%{
         border-top-color: transparent;
         border-right-color: transparent;
     }
-    50%{
+    75%{
         border-top-color: transparent;
         border-right-color: transparent;
         border-bottom-color: transparent;
