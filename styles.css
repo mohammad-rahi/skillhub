@@ -7,7 +7,7 @@
     --clr-font: #212832;
     --clr-primary: #3fba96;
     --clr-ratting: #fed21c;
-    --clr-hover: #f1f1f1;
+    --clr-hover: #E7F6F2;
     --clr-shadow: rgba(0, 0, 0, .2);
     --shadow-light: 0 5px 15px rgba(0, 0, 0, .1);
     --shadow-dark: 0 5px 15px rgba(0, 0, 0, .4);
@@ -17,9 +17,9 @@
 }
 
 .dark_theme {
-    --clr-bcg: #212832;
+    --clr-bcg: #2C3333;
     --clr-font: #fff;
-    --clr-hover: #313943;
+    --clr-hover: #395B64;
     --clr-shadow: rgba(255, 255, 255, .2);
 }
 
