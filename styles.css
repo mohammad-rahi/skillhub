@@ -393,11 +393,11 @@ main {
 }
 
 .loading{
-    border: 8px solid var(--clr-primary);
+    border: 5px solid var(--clr-primary);
     border-top-color: transparent;
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -406,11 +406,21 @@ main {
 }
 
 @keyframes loader {
-    from{
+    0%{
         transform: rotate(0deg);
     }
-    to{
+    25%{
+        border-top-color: transparent;
+        border-right-color: transparent;
+    }
+    50%{
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+    }
+    100%{
         transform: rotate(360deg);
+        border-color: transparent;
     }
 }
 
