@@ -1,6 +1,6 @@
 # Skillhub
 
-### Skillhub is a image to html project with toggel light and dark mode.
+### Skillhub is a image to html project with toggle light and dark mode.
 
 This website is full responsive for all devices (smartphones, tablets, computers, etc). In this website you'll see some section such as hero, explore, how to works, courses, etc.
 
